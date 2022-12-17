@@ -9,6 +9,7 @@
 }
 
 body {
+  position: relative;
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
@@ -136,6 +137,9 @@ h4 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail:hover,
@@ -477,6 +481,9 @@ img {
   border-radius: 4px;
   cursor: pointer;
   fill: var(--SubtleText);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .a-customers:hover,
@@ -559,6 +566,9 @@ img {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   color: var(--Light);
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-btn:hover {
@@ -576,6 +586,15 @@ img {
   background-size: contain;
   border: 0;
   fill: currentColor;
+}
+
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: #4d5ae5;
 }
 
 .section-portfolio {
@@ -599,6 +618,9 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--PrimaryBrand);
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list :not(:last-child) {
@@ -647,6 +669,9 @@ img {
 
 .link-portfolio {
   display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-portfolio:hover,
